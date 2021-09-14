@@ -58,17 +58,17 @@ Here we define the the substitution functions we provide.
 These functions ingests a QADataset, and modifies the context passage, according to defined rules, such that there is now a new answer to the question, according to the context.
 Greater detail is provided in our paper.
 
-* Alias Substitution (sub-command: `alias-substitution`) --- Here we replace an answer with one of it's wikidata aliases. 
+* **Alias Substitution** (sub-command: `alias-substitution`) --- Here we replace an answer with one of it's wikidata aliases. 
 Since the substituted answer is always semantically equivalent, answer type preservation is naturally maintained.
-* Popularity Substitution (sub-command: `popularity-substitution`) --- Here we replace answers with a WikiData answer of the same type, with a specified popularity bracket (according to monthly page views).
-* Corpus Substitution (sub-command: `corpus-substitution`) --- Here we replace answers with other answers of the same type, sampled from the same corpus.
-* Type Swap Substitution (sub-command: `type-swap-substitution`) --- Here we replace answers with other answers of different type, sampled from the same corpus.
+* **Popularity Substitution** (sub-command: `popularity-substitution`) --- Here we replace answers with a WikiData answer of the same type, with a specified popularity bracket (according to monthly page views).
+* **Corpus Substitution** (sub-command: `corpus-substitution`) --- Here we replace answers with other answers of the same type, sampled from the same corpus.
+* **Type Swap Substitution** (sub-command: `type-swap-substitution`) --- Here we replace answers with other answers of different type, sampled from the same corpus.
 
 ## How to Add Your own Dataset / Substitution Fn / NER Models
 
 ### Use your own Dataset
 
-To add your own dataset, create your own subclass of `QADataset` (in src/classes/qadataset.py).
+To add your own dataset, create your own subclass of `QADataset` (in `src/classes/qadataset.py`).
 
 1. Overwrite the `read_original_dataset` function, to read your dataset, creating a List of `QAExample` objects.
 2. Add your class and the url/filepath to the `DATASETS` variable in `src/load_dataset.py`.
