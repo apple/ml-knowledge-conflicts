@@ -1,6 +1,6 @@
 # Entity-Based Knowledge Conflicts in Question Answering
 
-[**Run Instructions**](#run-instructions) | [**Paper**](http://arxiv.org/abs/2109.05052) | [**Citation**](#citation) | [**License**](#license)
+[**Run Instructions**](#run-instructions) | [**Paper**](https://aclanthology.org/2021.emnlp-main.565/) | [**Citation**](#citation) | [**License**](#license)
 
 This repository provides the **Substitution Framework** described in Section 2 of our paper Entity-Based Knowledge Conflicts in Question Answering.
 Given a quesion answering dataset, we derive a new dataset where the context passages have been modified to have new answers to their question.
@@ -98,13 +98,21 @@ The functions which need to be changed are:
 
 Please cite the following if you found this resource or our paper useful.
 ```
-@misc{longpre2021entitybased,
-      title={Entity-Based Knowledge Conflicts in Question Answering}, 
-      author={Shayne Longpre and Kartik Perisetla and Anthony Chen and Nikhil Ramesh and Chris DuBois and Sameer Singh},
-      year={2021},
-      eprint={2109.05052},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{longpre-etal-2021-entity,
+    title = "Entity-Based Knowledge Conflicts in Question Answering",
+    author = "Longpre, Shayne  and
+      Perisetla, Kartik  and
+      Chen, Anthony  and
+      Ramesh, Nikhil  and
+      DuBois, Chris  and
+      Singh, Sameer",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.565",
+    pages = "7052--7063",
 }
 ```
 
